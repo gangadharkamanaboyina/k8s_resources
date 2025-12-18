@@ -5,9 +5,6 @@ metadata:
   namespace: roboshop
   labels:
     purpose: resourcemgmt-ex
-  env:
-    - name: gangu
-      value: DevOps Engineer
 spec:
   containers:
   - name: resourcemgmt-ex-container
