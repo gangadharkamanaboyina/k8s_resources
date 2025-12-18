@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resourcemgmt-ex-pod
+  namespace: roboshop
+  labels:
+    purpose: resourcemgmt-ex
+  env:
+    - name: gangu
+      value: DevOps Engineer
+spec:
+  containers:
+  - name: resourcemgmt-ex-container
+    image: nginx
+    resources:
+      requests:
+        memory: "4Mi"
+        cpu: "25m"
+      limits:
+        memory: "12Mi"
+        cpu: "50m"
+    ports:
+      - containerPort: 80
+    envFrom:
+      - configMapRef:
+          name: app-config
