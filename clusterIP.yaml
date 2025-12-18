@@ -8,7 +8,7 @@ metadata:
     env: test
     app: nginx
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     proj: roboshop
     env: test
