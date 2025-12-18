@@ -4,7 +4,9 @@ metadata:
   name: resourcemgmt-ex-pod
   namespace: roboshop
   labels:
-    purpose: resourcemgmt-ex
+    proj: roboshop
+    env: test
+    app: nginx
 spec:
   containers:
   - name: resourcemgmt-ex-container
